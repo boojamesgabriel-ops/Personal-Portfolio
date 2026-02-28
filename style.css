@@ -1,4 +1,89 @@
-#pfp {
-  height: 150px;
-  width: 150px;
+.pfp {
+  height: 170px;
+  width: 170px;
+  border-radius: 10px;
+  margin-left: 50px;
+  margin-top: 30px;
+  position: absolute;
+}
+
+.info {
+  margin-left: 240px;
+  margin-top: 52px;
+  margin-bottom: 3px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.loc {
+  margin-left: 247px;
+  margin-top: 0px;
+  font-size: 12px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.loc-emoji {
+  height: 13px;
+  width: 13px;
+  margin-left: 240px;
+  margin-top: -10px;
+}
+
+.info-grid {
+  display: grid;
+}
+
+.loc-grid {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 10px 1fr;
+}
+
+.degree {
+  margin-left: 240px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+
+.email {
+  margin-left: 240px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  background-color: lightgray;
+}
+
+.email-emoji {
+  height: 13px;
+  width: 13px;
+  margin-right: 9px;
+}
+
+.questions {
+  margin-left: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: black;
+}
+
+.questions-emoji {
+  height: 13px;
+  width: 13px;
+  margin-right: 9px;
+}
+
+.pfp-grid {
+  display: grid;
+
 }
