@@ -100,6 +100,52 @@
   grid-template-columns: 370px 150px;
 }
 
+.about-card {
+    margin-top: 30px;
+    margin-left: 50px;
+    max-width: 700px;
+    border: 2px;
+    border-style: solid;
+    border-color: lightgray;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 30px;
+    font-size: 15px;
+}
+
+.experiences {
+    margin-top: 30px;
+    max-width: 450px;
+    border: 2px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: lightgray;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 30px;
+    font-size: 15px;
+    min-height: 700px;
+}
+
+.stack {
+    margin-left: 50px;
+    max-width: 700px;
+    border: 2px;
+    border-style: solid;
+    border-color: lightgray;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 30px;
+    font-size: 15px;
+    min-height: 380px;
+}
+
 .about-section {
-  
+  display: grid;
+  grid-template-columns: 730px 1fr;
+  grid-template-rows: 340px 700px 600px;
+  align-items: start;
+  gap: 10px;
 }
