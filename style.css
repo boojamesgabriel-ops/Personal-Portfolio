@@ -149,7 +149,7 @@
     padding-right: 20px;
     line-height: 30px;
     font-size: 15px;
-    min-height: 700px;
+    min-height: 950px;
 }
 
 .exp-emoji {
@@ -171,7 +171,7 @@
     padding-right: 20px;
     line-height: 30px;
     font-size: 15px;
-    min-height: 380px;
+    min-height: 600px;
 }
 
 .stack-emoji {
@@ -182,21 +182,16 @@
 }
 
 .frontend-emoji {
-    vertical-align: bottom;
-    margin-right: -1px;
-    margin-bottom: 3px;
-    width: 26px;
-    height: 26px;
-}
-
-.frontend-list {
-    display: grid;
+    vertical-align: middle;
+    margin-bottom: 4px;
+    width: 24px;
+    height: 24px;
 }
 
 .html {
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
-    max-width: 120px;
+    min-width: 100px;
     min-height: 45px;
     border-radius: 30px;
     cursor: pointer;
@@ -213,7 +208,7 @@
 .css {
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
-    max-width: 120px;
+    min-width: 100px;
     min-height: 45px;
     border-radius: 30px;
     cursor: pointer;
@@ -223,14 +218,14 @@
     vertical-align: middle;
     margin-right: -1px;
     margin-bottom: 3px;
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
 }
 
 .javascript {
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
-    max-width: 120px;
+    min-width: 130px;
     min-height: 45px;
     border-radius: 30px;
     cursor: pointer;
@@ -240,14 +235,14 @@
     vertical-align: middle;
     margin-right: -1px;
     margin-bottom: 3px;
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
 }
 
 .react {
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
-    max-width: 120px;
+    min-width: 100px;
     min-height: 45px;
     border-radius: 30px;
     cursor: pointer;
@@ -257,14 +252,14 @@
     vertical-align: middle;
     margin-right: -1px;
     margin-bottom: 3px;
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
 }
 
 .tailwind {
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
-    max-width: 120px;
+    min-width: 135px;
     min-height: 45px;
     border-radius: 30px;
     cursor: pointer;
@@ -274,8 +269,14 @@
     vertical-align: middle;
     margin-right: -1px;
     margin-bottom: 3px;
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
+}
+
+.frontend-list {
+    display: flex;
+    gap: 15px;
+    align-items: start;
 }
 
 .about-section {
