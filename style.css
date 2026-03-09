@@ -1,24 +1,110 @@
+.layout {
+    display: grid;
+    align-items: start;
+    gap: 10px;
+    margin-left: 50px;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 80px 80px 80px 80px 80px;
+    gap: 30px;
+    justify-items: center;
+
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    padding: 10px;
+    max-width: 1375px;
+}
+
+.arrow {
+    vertical-align: text-top;
+}
+
+.header-hire{
+    padding: 10px;
+    width: 120px;
+    text-align: center;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color:rgb(20, 20, 20);
+    cursor: pointer;
+
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    margin-left: 1620px;
+}
+
+.header-home, .header-about, .header-projects, 
+.header-gallery{
+    padding: 10px 20px;
+    text-align: center;
+    background-color: white;
+    border: none;
+    padding: 10px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color:rgb(123, 123, 123);
+    cursor: pointer;
+    margin-left: 1000px;
+}
+
+.personal-info {
+    display: grid;
+    grid-template-columns: 940px 1fr;
+}
+
 .pfp-grid {
     display: grid;
-    max-width: 900px;
+    max-width: 940px;
     align-items: start;
     font-family: Arial, Helvetica, sans-serif;
+    display: grid;
 }
 
 .pfp {
-    height: 170px;
-    width: 170px;
-    border-radius: 10px;
-    margin-left: 50px;
-    margin-top: 30px;
+    height: 140px;
+    width: 140px;
+    border-radius: 90px;
+    margin-top: 20px;
+    
     position: absolute;
 }
 
-.info {
-    margin-left: 240px;
-    margin-top: 52px;
-    margin-bottom: 3px;
+.contact {
+    padding: 5px 25px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    max-width: 405px;
 }
+
+.contact-description {
+    margin-bottom: 55px;
+    margin-top: -13px;
+    color:rgb(123, 123, 123)
+}
+
+.info {
+    margin-left: 155px;
+    margin-top: 30px;
+    margin-bottom: 3px;
+    font-size: 30px;
+}
+
 
 .info-emoji {
     vertical-align: middle;
@@ -36,7 +122,7 @@
 }
 
 .loc {
-    margin-left: 247px;
+    margin-left: 162px;
     margin-top: 0px;
     font-size: 12px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -45,31 +131,79 @@
 .loc-emoji {
     height: 13px;
     width: 13px;
-    margin-left: 240px;
+    margin-left: 155px;
     margin-top: -10px;
 }
 
+.status {
+    margin-left: 155px;
+    margin-top: -10px;
+}
+
+.work {
+    border-width: 2px;
+    border-radius: 20px;
+    padding: 8px;
+    text-align: center;
+    max-width: 110px;
+    border-style: solid;
+    font-size: 13.5px;
+    background: rgba(34, 197, 94, 0.15);
+    color: #166534;
+    border: 1px solid rgba(34, 197, 94, 0.5);
+    box-shadow: 0 4px 10px rgba(34,197,94,0.25);
+}
+
+.other_info-block {
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-bottom: 8px;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: 230px 205px 150px;
+}
+
+.deg-emoji, .student-emoji, .eng-emoji {
+    height: 17px;
+    width: 17px;
+    vertical-align: text-bottom;
+}
+
 .degree {
-    margin-left: 240px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
+    color:rgb(123, 123, 123);
+}
+
+.engineer {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color:rgb(123, 123, 123);
+}
+
+.student {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color:rgb(123, 123, 123);
 }
 
 .email {
-    margin-left: 240px;
-    padding-left: 10px;
-    padding-right: 10px;
     padding-top: 9px;
     padding-bottom: 9px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    background-color: lightgray;
     align-items: center;
     display: flex;
     justify-content: center;
     cursor: pointer;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    padding: 10px;
+    max-width: 150px;
 }
 
 .email-emoji {
@@ -80,22 +214,23 @@
 }
 
 .questions {
-    margin-left: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 9px;
-    padding-bottom: 9px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 0%);
     background-color: hsl(0, 0%, 0%);
     max-width: 200px;
     align-items: center;
     display: flex;
     justify-content: center;
     cursor: pointer;
+
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    padding: 10px;
 }
 
 .questions-emoji {
@@ -106,17 +241,23 @@
 
 .button-grid {
   display: grid;  
-  grid-template-columns: 370px 150px;
+  grid-template-columns: 150px 150px;
+  margin-bottom: 10px;
+  gap: 10px;
 }
 
 .about-card {
-    margin-top: 30px;
-    margin-left: 50px;
     max-width: 900px;
     border: 2px;
     border-style: solid;
-    border-color: lightgray;
-    border-radius: 5px;
+    border-color: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
     padding-left: 20px;
     padding-right: 30px;
     padding-bottom: 20px;
@@ -131,20 +272,18 @@
     align-items: center;
 }
 
-.person-emoji {
-    vertical-align: text-top;
-    margin-right: 2px;
-    width: 26px;
-    height: 26px;
-}
 
 .experiences {
-    margin-top: 30px;
     max-width: 450px;
     border: 2px;
     border-radius: 5px;
     border-style: solid;
-    border-color: lightgray;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
     padding-left: 20px;
     padding-right: 20px;
     line-height: 30px;
@@ -152,138 +291,32 @@
     min-height: 950px;
 }
 
-.exp-emoji {
-    vertical-align: text-top;
-    margin-right: 3px;
-    width: 26px;
-    height: 26px;
+.about-section {
+  display: grid;
+  grid-template-columns: 940px 445px;
+  grid-template-rows: 340px 700px 600px;
+  align-items: start;
+  gap: 10px;
+}
+
+.contact-stack {
+    display: grid;
+    grid-template-columns: 460px 470px;
+    gap: 8px;
 }
 
 .stack {
-    margin-left: 50px;
-    margin-bottom: 2px;
-    max-width: 900px;
-    border: 2px;
-    border-style: solid;
-    border-color: lightgray;
-    border-radius: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-    line-height: 30px;
-    font-size: 15px;
-    min-height: 600px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    padding: 5px 25px;
 }
 
-.stack-emoji {
-    vertical-align: text-top;
-    margin-right: 3px;
-    width: 26px;
-    height: 26px;
-}
-
-.frontend-emoji {
-    vertical-align: middle;
-    margin-bottom: 4px;
-    width: 24px;
-    height: 24px;
-}
-
-.html {
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: bold;
-    min-width: 100px;
-    min-height: 45px;
-    border-radius: 30px;
-    cursor: pointer;
-}
-
-.html-emoji {
-    vertical-align: middle;
-    margin-right: -1px;
-    margin-bottom: 3px;
-    width: 20px;
-    height: 20px;
-}
-
-.css {
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: bold;
-    min-width: 100px;
-    min-height: 45px;
-    border-radius: 30px;
-    cursor: pointer;
-}
-
-.css-emoji {
-    vertical-align: middle;
-    margin-right: -1px;
-    margin-bottom: 3px;
-    width: 20px;
-    height: 20px;
-}
-
-.javascript {
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: bold;
-    min-width: 130px;
-    min-height: 45px;
-    border-radius: 30px;
-    cursor: pointer;
-}
-
-.js-emoji {
-    vertical-align: middle;
-    margin-right: -1px;
-    margin-bottom: 3px;
-    width: 20px;
-    height: 20px;
-}
-
-.react {
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: bold;
-    min-width: 100px;
-    min-height: 45px;
-    border-radius: 30px;
-    cursor: pointer;
-}
-
-.react-emoji {
-    vertical-align: middle;
-    margin-right: -1px;
-    margin-bottom: 3px;
-    width: 20px;
-    height: 20px;
-}
-
-.tailwind {
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: bold;
-    min-width: 135px;
-    min-height: 45px;
-    border-radius: 30px;
-    cursor: pointer;
-}
-
-.tailwind-emoji {
-    vertical-align: middle;
-    margin-right: -1px;
-    margin-bottom: 3px;
-    width: 20px;
-    height: 20px;
-}
-
-.frontend-list {
-    display: flex;
-    gap: 15px;
-    align-items: start;
-}
-
-.about-section {
-  display: grid;
-  grid-template-columns: 940px 1fr;
-  grid-template-rows: 340px 700px 600px;
-  align-items: start;
-  row-gap: 40px;
-  column-gap: 10px;
+.gmail-emoji, .linkedin-emoji, .github-emoji {
+    height: 17px;
+    width: 17px;
+    vertical-align: text-bottom;
 }
