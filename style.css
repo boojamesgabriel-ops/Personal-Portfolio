@@ -161,7 +161,7 @@
     margin-bottom: 8px;
     display: grid;
     gap: 50px;
-    grid-template-columns: 230px 235px 150px;
+    grid-template-columns: 230px 253px 150px;
 }
 
 .deg-emoji, .student-emoji, .eng-emoji {
