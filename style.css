@@ -1,3 +1,7 @@
+body {
+    padding-top: 15px;
+}
+
 .layout {
     display: grid;
     align-items: start;
@@ -314,7 +318,7 @@
     display: grid;
     grid-template-columns: 460px 470px;
     gap: 12px;
-    padding-bottom: 50px;;
+    padding-bottom: 25px;;
 }
 
 .contact-head {
@@ -399,6 +403,24 @@
     border: 1px solid rgba(255, 255, 255, 0.4);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
     padding: 5px 25px;
-    grid-column: 1 / 41;
+    grid-column: 1 / 10;
     min-height: 320px;
+    display: grid;
+    grid-template-columns: 200px 70px;
+    grid-template-rows: 100 auto;
+    gap: 1080px;
+    vertical-align: center;
+    margin-top: 2px;
 }
+
+.gallery-text {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: lighter;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.view-gallery {
+    max-width: 100px;
+}
+
