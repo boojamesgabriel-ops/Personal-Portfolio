@@ -95,7 +95,7 @@ body {
     border-radius: 16px;
     border: 1px solid rgba(255, 255, 255, 0.4);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
-    max-width: 405px;
+    max-width: 350px;
 }
 
 .contact-description {
@@ -315,9 +315,9 @@ body {
 
 .contact-stack {
     display: grid;
-    grid-template-columns: 460px 470px;
+    grid-template-columns: 350px 575px;
     gap: 12px;
-    padding-bottom: 25px;;
+    padding-bottom: 25px;
 }
 
 .contact-head {
@@ -354,32 +354,39 @@ body {
 }
 
 .stack {
-    gap: 200px;
+    gap: 305px;
     margin-top: 2px;
     display: grid;
     grid-template-columns: 150px 100px;
 }
 
-.frontend {
+.frontend, .backend, .database, .deployment {
     display: flex;
-    gap: 3px;
+    gap: 5px;
 }
 
-.frontend-text {
+.stack-tag {
     border: 1px solid black;
     border-radius: 10px;
     margin: 0;
     padding: 3px 8px 3px 5px;
-
     display: flex;
     align-items: center;
     gap: 6px
 }
 
-.frontend-emoji {
+.backend-emoji, .frontend-emoji, .database-emoji,
+.deployment-emoji {
     height: 22px;
     width: 22px;
     display: block;
+}
+
+
+.languages {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
 }
 
 .stack-div {
