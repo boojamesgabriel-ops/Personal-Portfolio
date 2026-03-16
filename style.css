@@ -360,13 +360,26 @@ body {
     grid-template-columns: 150px 100px;
 }
 
-.html-icon {
-    vertical-align: middle;
+.frontend {
+    display: flex;
+    gap: 3px;
 }
 
-.html-emoji {
+.frontend-text {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 0;
+    padding: 3px 8px 3px 5px;
+
+    display: flex;
+    align-items: center;
+    gap: 6px
+}
+
+.frontend-emoji {
     height: 22px;
     width: 22px;
+    display: block;
 }
 
 .stack-div {
