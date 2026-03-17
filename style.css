@@ -75,16 +75,33 @@ body {
 }
 
 .pfp-grid {
+    
     display: grid;
+    grid-template-columns: 160px 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    column-gap: 15px;
+    row-gap: 8px;
     align-items: start;
+
+
 }
 
+.info,
+.loc-grid,
+.status {
+    grid-column: 2;
+}
+
+
 .pfp {
-    height: 140px;
-    width: 140px;
+    
+grid-column: 1;
+    grid-row: 1 / span 4;
+    height: 160;
+    width: 160px;
     border-radius: 90px;
-    margin-top: 20px;
-    position: absolute;
+    margin-top: 20px
+
 }
 
 .contact {
@@ -105,8 +122,8 @@ body {
 }
 
 .info {
-    margin-left: 155px;
     margin-top: 30px;
+    height: 30px;
     margin-bottom: 3px;
     font-size: 30px;
 }
@@ -124,7 +141,7 @@ body {
 .loc-grid {
     display: grid;
     grid-template-columns: auto 1fr;
-    align-items: center;
+    vertical-align: text-bottom;
     gap: 6px;
 }
 
@@ -140,8 +157,8 @@ body {
 }
 
 .status {
-    margin-left: 155px;
-    margin-top: -10px;
+    height:50px;
+    margin-top: -20px;
 }
 
 .work {
