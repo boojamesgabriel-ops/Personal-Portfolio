@@ -1,5 +1,6 @@
 body {
     padding-top: 15px;
+    padding-bottom: 20px;
 }
 
 .layout {
@@ -325,7 +326,7 @@ grid-column: 1;
 
 .about-section {
     display: grid;
-    grid-template-columns: 940px 1fr;
+    grid-template-columns: 940px 450px;
     gap: 12px;
     align-items: start
 
