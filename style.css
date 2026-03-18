@@ -475,3 +475,8 @@ grid-column: 1;
     max-width: 100px;
 }
 
+.picture {
+    height: 200px;
+    width: 220px;
+}
+
