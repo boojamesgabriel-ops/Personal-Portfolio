@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     padding-top: 15px;
     padding-bottom: 20px;
@@ -334,8 +338,8 @@ grid-column: 1;
 .about-section {
     display: grid;
     grid-template-columns: 940px 450px;
+    align-items: start;
     gap: 12px;
-    align-items: start
 
 }
 
@@ -437,8 +441,12 @@ grid-column: 1;
     margin-top: 15px;
     text-decoration: underline;
     color: rgb(123,123,123);
-    font-size: 12px;
+    font-size: 11px;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: lighter;
+    font-style: normal;
 }
+
 
 .arrow_out-emoji {
     width: 13px;
