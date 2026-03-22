@@ -9,23 +9,23 @@
 </head>
 <body>
 
-  <div class="layout">
+  <section class="layout">
     <div class="header">
       <img class="ai-icon" src="images/big-data.png">
       <div class="nav-links">
-        <a href="" class="header-home">
+        <a href="#nav-header" class="header-home">
           Home
         </a>
 
-        <a href="" class="header-about">
+        <a href="#nav-about" class="header-about">
           About
         </a>
 
-        <a href="" class="header-projects">
+        <a href="#nav-projects" class="header-projects">
           Projects
         </a>
 
-        <a href="" class="header-gallery">
+        <a href="#nav-gallery" class="header-gallery">
           Gallery
         </a>
       </div>
@@ -35,7 +35,7 @@
       </button>
     </div>
 
-    <section class="personal-info">
+    <section id="nav-header" class="personal-info">
       <div class="pfp-grid"> 
           <img class="pfp" src="images/pfp.jpg">
 
@@ -56,15 +56,15 @@
             </div>
 
         <div class="other_info-block">
-          <h3 class="degree"> <img class="deg-emoji" src="images/code.png">
+          <h3 class="other_info"> <img class="info-emoji" src="images/full_stack.png">
             Aspiring Full Stack Developer
           </h3>
 
-          <h3 class="student"> <img class="student-emoji" src="images/hats.png">
+          <h3 class="other_info"> <img class="info-emoji" src="images/degree.png">
             Computer Science Student
           </h3>
 
-          <h3 class="engineer"> <img class="eng-emoji" src="images/backend.png">
+          <h3 class="other_info"> <img class="info-emoji" src="images/eng.png">
             Software Engineer
           </h3>
         </div>
@@ -84,7 +84,7 @@
     </section>  
 
     <section class="about-section">
-      <div class="about-card">
+      <div id="nav-about" class="about-card">
         <div class="about">
           <h3 class="about-me">
             about me
@@ -116,7 +116,7 @@
         </h5>
       </div>
 
-      <div class="contact-stack">
+      <section class="contact-stack">
         <div class="contact"> 
           <h3 class="contact-head">
             Get in Touch
@@ -163,66 +163,11 @@
               <h4 class="stack-tag">
                 <img class="frontend-emoji" src="images/css-3.png"> CSS
               </h4>
-
-              <h4 class="stack-tag">
-                <img class="frontend-emoji" src="images/js.png"> JavaScript
-              </h4>
-
-              <h4 class="stack-tag">
-                <img class="frontend-emoji" src="images/react.png"> React
-              </h4>
-
-              <h4 class="stack-tag">
-                  <img class="frontend-emoji" src="images/tailwind.png"> Tailwind
-                </h4>
-            </div>
-
-            <div class="deployment">
-              <h4 class="stack-tag">
-                <img class="deployment-emoji" src="images/vercel.png"> Vercel
-              </h4>
-
-              <h4 class="stack-tag">
-                <img class="deployment-emoji" src="images/railway.png"> Railway
-              </h4>
-
-              <h4 class="stack-tag">
-                <img class="deployment-emoji" src="images/aws.png"> Amazon Web Services
-              </h4>
-            </div>
-
-            <div class="backend">
-              <h4 class="stack-tag">
-                <img class="backend-emoji" src="/images/python.png"> Python
-              </h4>
-
-              <h4 class="stack-tag">
-                <img class="backend-emoji" src="images/api.png"> FastAPI
-              </h4>
-
-              <h4 class="stack-tag">
-                <img class="backend-emoji" src="images/java.png"> Java
-              </h4>
-
-              <h4 class="stack-tag">
-                <img class="backend-emoji" src="images/c++.png"> C++
-              </h4>
-            </div>
-
-            <div class="database">
-              <h4 class="stack-tag">
-                <img class="database-emoji" src="images/postgre.png"> PostgreSql
-              </h4>
-
-              <h4 class="stack-tag">
-                <img class="database-emoji" src="images/mongo.png"> MongoDb
-              </h4>
-            </div>
           </section>
         </section>
-      </div>
+      </section>
 
-      <div class="featured_projects_block">
+      <div id="nav-projects" class="featured_projects_block">
         <div class="featured-header">
           <h3 class="projects">
             Featured Projects
@@ -238,7 +183,7 @@
         </div>
       </div>
 
-      <div class="gallery-block">
+      <section id="nav-gallery" class="gallery-block">
         <div class="gallery-header">
           <h3 class="gallery-text">
             Gallery
@@ -264,8 +209,8 @@
 
           <img class="picture" src="images/e.jpg">
         </div>
-      </div>
+      </section>
     </section>
-  </div>
+  </section>
 
 </body>
