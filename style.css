@@ -63,8 +63,7 @@ body {
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
 }
 
-.header-home, .header-about, .header-projects, 
-.header-gallery{
+.nav-header{
     padding: 10px 20px;
     text-align: center;
     border: none;
@@ -76,6 +75,11 @@ body {
     cursor: pointer;
     list-style: none;
     text-decoration: none;
+}
+
+.nav-header:hover {
+    text-decoration: underline;
+    font-size: 18px;
 }
 
 .personal-info {
@@ -178,11 +182,21 @@ grid-column: 1;
     max-width: 110px;
     border-style: solid;
     font-size: 13.5px;
-    background: rgba(34, 197, 94, 0.15);
-    color: #166534;
-    border: 1px solid rgba(34, 197, 94, 0.5);
-    box-shadow: 0 4px 10px rgba(34,197,94,0.25);
+    background: linear-gradient(
+        135deg,
+        rgb(20, 120, 80),
+        rgb(74, 190, 140)
+    );
+    color: rgb(179, 249, 216);
+    border: 1px solid rgb(15, 90, 60);
+    box-shadow:
+        0 5px 14px rgb(130, 255, 205),
+        inset 0 1px 0 rgba(255, 255, 255, 0.789);
 }
+
+
+
+
 
 .other_info-block {
     margin-top: 15px;
@@ -241,7 +255,6 @@ grid-column: 1;
     display: flex;
     justify-content: center;
     cursor: pointer;
-
     background: rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(20px);
@@ -369,10 +382,9 @@ grid-column: 1;
 }
 
 .stack {
-    gap: 305px;
-    margin-top: 2px;
-    display: grid;
-    grid-template-columns: 150px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .frontend, .backend, .database, .deployment {
@@ -424,12 +436,17 @@ grid-column: 1;
 .view_button {
     display: inline-block;
     margin-top: 15px;
-    text-decoration: underline;
     color: rgba(71, 66, 66, 0.732);
     font-size: 11px;
     font-family: "Archivo Black", sans-serif;
     font-weight: lighter;
     font-style: normal;
+    text-decoration: none;
+}
+
+.view_button:hover {
+    text-decoration: underline;
+    font-size: 13px;
 }
 
 
