@@ -358,7 +358,8 @@ body {
     font-weight: lighter;
     font-style: normal;
     font-size: 20px;
-    height: 26px;
+    padding-top: 12px;
+    margin-top: 0;
 }
 
 .featured_projects_block {
